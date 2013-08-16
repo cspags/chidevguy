@@ -1,0 +1,9 @@
+---
+layout: post
+title: "Welcome"
+date: 2013-08-15 19:59
+comments: true
+categories: 
+---
+
+Thanks for visiting my blog/portfolio site. My name is Chris, I've been a .NET web developer for about 6 years now, and live in Chicago (as you might have guessed). I created this site using Octopress, which I chose due to my desire to learn both Ruby and Rails. So far I've completed the [Rails Tutorial](http://ruby.railstutorial.org/) by Michael Hartl and am currently working on a small Rails side project, which I plan to blog about more soon (as well as show off here!).

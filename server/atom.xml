@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Chi Dev Guy]]></title>
+  <link href="http://www.chidevguy.com/atom.xml" rel="self"/>
+  <link href="http://www.chidevguy.com/"/>
+  <updated>2013-08-15T19:35:38-05:00</updated>
+  <id>http://www.chidevguy.com/</id>
+  <author>
+    <name><![CDATA[Chris Spagnuolo]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[first]]></title>
+    <link href="http://www.chidevguy.com/blog/2013/08/13/first/"/>
+    <updated>2013-08-13T21:38:00-05:00</updated>
+    <id>http://www.chidevguy.com/blog/2013/08/13/first</id>
+    <content type="html"><![CDATA[<h1>Test</h1>
+
+<p>This is my first octopress post</p>
+
+<blockquote><p>asdflk
+aslkdf
+ee
+asldkf
+askldfasdklf</p></blockquote>
+
+<p>aksldfjlksf</p>
+]]></content>
+  </entry>
+  
+</feed>
