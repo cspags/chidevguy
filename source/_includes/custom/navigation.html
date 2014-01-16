@@ -11,15 +11,18 @@
 
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
+                <li {% if page.navbar == 'About' %}class="active"{% endif %}>
+                    <a href="{{ root_url }}/about.html">About</a>
+                </li>
+                <li {% if page.navbar == 'Projects' %}class="active"{% endif %}>
+                    <a href="{{ root_url }}/portfolio.html">Projects</a>
+                </li>
                 <li {% if page.navbar == 'Blog' %}class="active"{% endif %}>
                     <a href="{{ root_url }}/blog">Blog</a>
                 </li>
-                <li {% if page.navbar == 'Archives' %}class="active"{% endif %}>
+                <!-- <li {% if page.navbar == 'Archives' %}class="active"{% endif %}>
                     <a href="{{ root_url }}/blog/archives">Archives</a>
-                </li>
-                <li {% if page.navbar == 'Portfolio' %}class="active"{% endif %}>
-                    <a href="{{ root_url }}/portfolio.html">Portfolio</a>
-                </li>
+                </li> -->
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>

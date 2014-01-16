@@ -1,3 +1,8 @@
+/* bootstrap media variables */
+$screen-sm-min: 768px;  /* min tablet */
+$screen-md-min: 992px;  /* min desktop */
+$screen-lg-min: 1200px; /* min large desktop */
+
 /* nice sticky footer, from http://getbootstrap.com/examples/sticky-footer/ */
 html, body {
     height: 100%;
@@ -17,4 +22,11 @@ html, body {
 /* Set the fixed height of the footer here */
 footer[role=contentinfo] {
     height: 60px;
+}
+
+/* Add extra space below navbar on non-phone screens */
+@media (min-width: $screen-sm-min) {
+  .navbar {
+    margin-bottom: 40px;
+  }
 }
