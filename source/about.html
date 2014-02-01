@@ -1,22 +1,93 @@
 ---
 layout: default
-title: "About - Chi Dev Guy"
+title: "About"
 navbar: About
 ---
 
-<div class="row">
-	<div class="media col-md-offset-2 col-md-8">
-	  <a class="pull-left" style="margin-right:20px" href="#">
-	    <img class="media-object img-responsive" src="http://placekitten.com/200/300" alt="temp">
-	  </a>
-	  <div class="media-body">
-	    <h3 class="media-heading">Chris Spagnuolo</h3>
-	    <h4 class="media-heading small">Software Developer, Problem Solver, and Entrepreneur</h4>
-	    <br />
-	    <p>asldjf jalkd fjasd lkfj dfjkasldfjasl fjasdlfj asdl fjas dlfjadls
-	    alskdfjlas dkfj lajfdlas djflasdj flajdflasjdf lasd
-	    asdflkjsdlfjalfjlsdfj affffffdfkasdjf lasf ad falkjflasd jfldsjfld asjf jf jfsda new
-	    </p>
-	  </div>
-	</div>
-</div>
+{% render_partial _partials/about.html %}
+
+<!-- +++++ Information Section +++++ -->
+	
+	<div class="container pt">
+		<div class="row centered">
+		<h4>AREAS OF EXPERTISE</h4>
+		</div>
+		<div class="row mt centered">	
+			<div class="col-lg-4">
+				<span class="glyphicon glyphicon-globe"></span>
+				<p>Dynamic, data-driven, websites. These look good whether on a laptop, tablet, or mobile device.</p>
+			</div>
+			
+			<div class="col-lg-4">
+				<span class="glyphicon glyphicon-phone"></span>
+				<p>Custom Android apps, built natively for performance.</p>
+			</div>
+
+			<div class="col-lg-4">
+				<span class="glyphicon glyphicon-search"></span>
+				<p>SEO optimization. Analysis and improvement to your existing website's search rankings.</p>
+			</div>
+
+		</div><!-- /row -->
+		
+		<div class="row mt">
+			<div class="col-lg-6">
+				<h4>ABOUT ME</h4>
+				<p>Whether at my day job, or after hours at home, often times you'll catch me coding. Software development is not just a job to me, it's a hobby and a passion, something that I take great joy in doing. Growing up my dad owned his own business, and I've definitely got the entrepreneurial gene from him! I'm hoping to one day follow in his footsteps and launch a business of my own.  As of now, I'm continuing to learn and develop both my technical and business skills.</p>
+				<p>When I'm not coding, you're likely to find me knee deep in a programming/business/self-development book on my Kindle, at the gym strength training, or out enjoying all that Chicago has to offer. I'm always looking to make new connections, so please feel free to <a href="{{root_url}}/contact.html">contact</a> me!</p>
+			</div><!-- /colg-lg-6 -->
+			
+			{% assign html_css = 80 %}
+			{% assign javascript = 70 %}
+			{% assign aspnet_mvc = 100 %}
+			{% assign ruby_rails = 70 %}
+			{% assign android = 50 %}
+			{% assign sql = 60 %}
+
+			<div class="col-lg-6">
+				<h4>TECHNICAL SKILLS</h4>
+				HTML + CSS (TWITTER BOOTSTRAP)
+				<div class="progress">
+					<div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="{{html_css}}" aria-valuemin="0" aria-valuemax="100" style="width: {{html_css}}%;">
+						<span class="sr-only">{{html_css}}% Complete</span>
+					</div>
+				</div>
+
+				JAVASCRIPT (KNOCKOUTJS, JQUERY)
+				<div class="progress">
+					<div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="{{javascript}}" aria-valuemin="0" aria-valuemax="100" style="width: {{javascript}}%;">
+						<span class="sr-only">{{javascript}}% Complete</span>
+					</div>
+				</div>
+
+				ASP.NET MVC
+				<div class="progress">
+					<div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="{{aspnet_mvc}}" aria-valuemin="0" aria-valuemax="100" style="width: {{aspnet_mvc}}%;">
+						<span class="sr-only">{{aspnet_mvc}}% Complete</span>
+					</div>
+				</div>
+
+				RUBY ON RAILS
+				<div class="progress">
+					<div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="{{ruby_rails}}" aria-valuemin="0" aria-valuemax="100" style="width: {{ruby_rails}}%;">
+						<span class="sr-only">{{ruby_rails}}% Complete</span>
+					</div>
+				</div>
+
+				ANDROID
+				<div class="progress">
+					<div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="{{android}}" aria-valuemin="0" aria-valuemax="100" style="width: {{android}}%;">
+						<span class="sr-only">{{android}}% Complete</span>
+					</div>
+				</div>
+
+				SQL
+				<div class="progress">
+					<div class="progress-bar progress-bar-theme" role="progressbar" aria-valuenow="{{sql}}" aria-valuemin="0" aria-valuemax="100" style="width: {{sql}}%;">
+						<span class="sr-only">{{sql}}% Complete</span>
+					</div>
+				</div>
+
+			</div><!-- /col-lg-6 -->
+		</div><!-- /row -->
+	</div><!-- /container -->
