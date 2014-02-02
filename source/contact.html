@@ -4,4 +4,37 @@ title: Contact
 navbar: Contact
 ---
 
-<p>Contact page</p>
+<div class="container pt">
+	<div class="row">
+		<div class="col-lg-6 col-lg-offset-3 centered">
+			<h3>CONTACT</h3>
+			<hr>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-6 col-lg-offset-3">
+			<p>Whether you're looking for a developer or just want to connect, I'd love to hear from you.  Just send me a message below, and I'll get back to you as soon as possible!</p>
+			<div id="wufoo-z1oa6fbu0gf8i4f">
+			Fill out my <a href="https://cspags.wufoo.com/forms/z1oa6fbu0gf8i4f">online form</a>.
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="{{ root_url }}/javascripts/wufoo.js"></script>
+<script type="text/javascript">var z1oa6fbu0gf8i4f;(function(d, t) {
+		var s = d.createElement(t), options = {
+		'userName':'cspags', 
+		'formHash':'z1oa6fbu0gf8i4f', 
+		'autoResize':true,
+		'height':'495',
+		'async':true,
+		'host':'wufoo.com',
+		'header':'hide', 
+		'ssl':true};
+		s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+		s.onload = s.onreadystatechange = function() {
+		var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+		try { z1oa6fbu0gf8i4f = new WufooForm();z1oa6fbu0gf8i4f.initialize(options);z1oa6fbu0gf8i4f.display(); } catch (e) {}};
+		var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+		})(document, 'script');</script>
